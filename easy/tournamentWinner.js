@@ -28,7 +28,7 @@ function tournamentWinner(competitions, results) {
     let leadingTeam = {name: '', score: 0}
     for (let i = 0; i < competitions.length; i++) {
         let winningTeam = results[i] === 0 ? competitions[i][1] : competitions[i][0]
-        console.log("WINNINGTEAM: ",winningTeam)
+
         if (leadingTeam.name === winningTeam) {
             leadingTeam.score += 3
         } else {
@@ -53,11 +53,11 @@ function tournamentWinner(competitions, results) {
 
 const competitions = [
     ["HTML", "Java"],
-    // ["Java", "Python"],
-    // ["Python", "HTML"],
-    // ["C#", "Python"],
-    // ["Java", "C#"],
-    // ["C#", "HTML"]
+    ["Java", "Python"],
+    ["Python", "HTML"],
+    ["C#", "Python"],
+    ["Java", "C#"],
+    ["C#", "HTML"]
 ]
 
 const results = [0, 1, 1, 1, 0, 1]
