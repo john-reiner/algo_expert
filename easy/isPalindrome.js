@@ -1,6 +1,5 @@
 var isPalindrome = function(x) {
     let numStr = x.toString();
-
     let pointerOne = 0;
     let pointerTwo = numStr.length - 1;
     for (let i = 0; i < numStr.length; i++) {
